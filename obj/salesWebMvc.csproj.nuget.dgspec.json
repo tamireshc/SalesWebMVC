@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "/home/tamires/Desktop/salesWebMvc/salesWebMvc.csproj": {}
+    "/Users/tamireshc/Desktop/salesWebMvc/salesWebMvc.csproj": {}
   },
   "projects": {
-    "/home/tamires/Desktop/salesWebMvc/salesWebMvc.csproj": {
+    "/Users/tamireshc/Desktop/salesWebMvc/salesWebMvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/tamires/Desktop/salesWebMvc/salesWebMvc.csproj",
+        "projectUniqueName": "/Users/tamireshc/Desktop/salesWebMvc/salesWebMvc.csproj",
         "projectName": "salesWebMvc",
-        "projectPath": "/home/tamires/Desktop/salesWebMvc/salesWebMvc.csproj",
-        "packagesPath": "/home/tamires/.nuget/packages/",
-        "outputPath": "/home/tamires/Desktop/salesWebMvc/obj/",
+        "projectPath": "/Users/tamireshc/Desktop/salesWebMvc/salesWebMvc.csproj",
+        "packagesPath": "/Users/tamireshc/.nuget/packages/",
+        "outputPath": "/Users/tamireshc/Desktop/salesWebMvc/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/tamires/.nuget/NuGet/NuGet.Config"
+          "/Users/tamireshc/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,7 +44,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -55,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.116/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
         }
       }
     }

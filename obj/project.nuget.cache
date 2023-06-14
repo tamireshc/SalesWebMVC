@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6xlhPeJpEZpoCgaM1LeIPPYASrbkV0fOWM+Pqldeq3IbT3bej5ZOGBQMxboIjsbEveBexqkGz90O9uA+bt4htg==",
+  "dgSpecHash": "qvAM9QiGNRC9ojfVQKrWOnCR516difDqMiCBmLVRnsj8aOjHwRd0N8C0F6bx6yQcPegiBuS79apqvHtnRUlOeQ==",
   "success": true,
-  "projectFilePath": "/home/tamires/Desktop/salesWebMvc/salesWebMvc.csproj",
+  "projectFilePath": "/Users/tamireshc/Desktop/salesWebMvc/salesWebMvc.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
