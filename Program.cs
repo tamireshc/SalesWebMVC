@@ -8,11 +8,25 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<salesWebMvcContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("salesWebMvcContext"), ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("salesWebMvcContext"))));
 
+builder.Services.AddTransient<SeedingService>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
+//Seed Data
+void SeedData(IHost app)
+{
+    var scopedFactory = app.Services.GetService<IServiceScopeFactory>();
+
+    using (var scope = scopedFactory.CreateScope())
+    {
+        var service = scope.ServiceProvider.GetService<SeedingService>();
+        service.Seed();
+    }
+}
+
+SeedData(app);
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
