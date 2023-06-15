@@ -106,7 +106,6 @@ C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\System.Co
 C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\System.Composition.Runtime.dll
 C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\System.Composition.TypedParts.dll
 C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
-C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\System.Drawing.Common.dll
 C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
@@ -328,3 +327,17 @@ C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\obj\Debug\net6.0\refint\sa
 C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\obj\Debug\net6.0\salesWebMvc.pdb
 C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\obj\Debug\net6.0\salesWebMvc.genruntimeconfig.cache
 C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\obj\Debug\net6.0\ref\salesWebMvc.dll
+C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\tamir\OneDrive\Área de Trabalho\salesWebMvc\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
