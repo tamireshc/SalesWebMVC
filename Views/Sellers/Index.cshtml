@@ -1,7 +1,11 @@
 ﻿@model IEnumerable<salesWebMvc.Models.Seller>
 @{
     ViewData["Title"] = "Sellers";
-    <h2>ViewData["Title"]</h2>
+ }
+    <h2>@ViewData["Title"]</h2>
+    <p>
+        <a asp-action="Create" class="btn btn-dark">Create New</a>
+    </p>
     
     <table class="table table-striped table-hover">
         <thead class="success">
@@ -30,4 +34,4 @@
             }
         </tbody>
     </table>
-}
+

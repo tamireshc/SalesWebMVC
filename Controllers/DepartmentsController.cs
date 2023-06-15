@@ -22,20 +22,20 @@ namespace salesWebMvc.Controllers
         // GET: Departments
         public async Task<IActionResult> Index()
         {
-              return _context.Department != null ? 
-                          View(await _context.Department.ToListAsync()) :
+              return _context.Departments != null ? 
+                          View(await _context.Departments.ToListAsync()) :
                           Problem("Entity set 'salesWebMvcContext.Department'  is null.");
         }
 
         // GET: Departments/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Department == null)
+            if (id == null || _context.Departments == null)
             {
                 return NotFound();
             }
 
-            var department = await _context.Department
+            var department = await _context.Departments
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (department == null)
             {
@@ -70,12 +70,12 @@ namespace salesWebMvc.Controllers
         // GET: Departments/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Department == null)
+            if (id == null || _context.Departments == null)
             {
                 return NotFound();
             }
 
-            var department = await _context.Department.FindAsync(id);
+            var department = await _context.Departments.FindAsync(id);
             if (department == null)
             {
                 return NotFound();
@@ -121,12 +121,12 @@ namespace salesWebMvc.Controllers
         // GET: Departments/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Department == null)
+            if (id == null || _context.Departments == null)
             {
                 return NotFound();
             }
 
-            var department = await _context.Department
+            var department = await _context.Departments
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (department == null)
             {
@@ -141,14 +141,14 @@ namespace salesWebMvc.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Department == null)
+            if (_context.Departments == null)
             {
                 return Problem("Entity set 'salesWebMvcContext.Department'  is null.");
             }
-            var department = await _context.Department.FindAsync(id);
+            var department = await _context.Departments.FindAsync(id);
             if (department != null)
             {
-                _context.Department.Remove(department);
+                _context.Departments.Remove(department);
             }
             
             await _context.SaveChangesAsync();
@@ -157,7 +157,7 @@ namespace salesWebMvc.Controllers
 
         private bool DepartmentExists(int id)
         {
-          return (_context.Department?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.Departments?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

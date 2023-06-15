@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using salesWebMvc.Data;
 
@@ -10,9 +11,11 @@ using salesWebMvc.Data;
 namespace salesWebMvc.Migrations
 {
     [DbContext(typeof(salesWebMvcContext))]
-    partial class salesWebMvcContextModelSnapshot : ModelSnapshot
+    [Migration("20230615203522_departmentForeignKey")]
+    partial class departmentForeignKey
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
