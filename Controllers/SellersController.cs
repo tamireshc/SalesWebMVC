@@ -2,6 +2,8 @@
 using salesWebMvc.Models;
 using salesWebMvc.Models.ViewModels;
 using salesWebMvc.Services;
+using salesWebMvc.Services.Exception;
+using SQLitePCL;
 
 namespace salesWebMvc.Controllers
 {
@@ -62,5 +64,38 @@ namespace salesWebMvc.Controllers
             return View(seller);
         }
 
+        public IActionResult Edit(int? id)
+        {
+            if (id == null) return NotFound();
+            var seller = _sellerService.FindById(id.Value);
+            if (seller == null) return NotFound();
+
+            List<Department> departments = _departmentService.FindAll();  
+            SellerFormViewModel viewModel = new SellerFormViewModel() { 
+                Seller = seller,
+                Departments = departments
+            };
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(int Id, Seller seller)
+        {
+            try
+            {
+                if (Id != seller.Id) return BadRequest();
+                _sellerService.Updade(seller);
+                return RedirectToAction(nameof(Index));
+            }
+            catch(NotFoundException) 
+            {
+                return NotFound();
+            }
+            catch(DbConcurrencyException) 
+            {
+                return BadRequest();
+            }
+        }
     }
 }
