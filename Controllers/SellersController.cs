@@ -46,8 +46,6 @@ namespace salesWebMvc.Controllers
                 };
                 return View(viewModel);
             };
-
-            if (!ModelState.IsValid) return View(seller);
             await _sellerService.Insert(seller);
             return RedirectToAction(nameof(Index));
         }
